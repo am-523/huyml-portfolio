@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huy Phan — Award-winning designer</title>
+  <meta name="description" content="Huy Phan (Huyml) is an award-winning designer and art director based in Ho Chi Minh City, Vietnam.">
+  <link rel="icon" type="image/svg+xml" href="https://framerusercontent.com/images/T9Y2v9h5BFE7g3Jmw9iWd4WngyQ.svg">
+
+  <!-- Exact WOFF2 Fonts from huyml.co (BT Grotesk, BT Glyphius, F37 Bolton) -->
+  <style>
+    @font-face {
+      font-family: "BT Grotesk";
+      src: url("https://framerusercontent.com/assets/oDqinH2S9k4fMbGueYwREUmNFM.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "BT Grotesk";
+      src: url("https://framerusercontent.com/assets/pczyWZYmicHp9LhGgMJo7tnDcHo.woff2") format("woff2");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "BT Grotesk";
+      src: url("https://framerusercontent.com/assets/7wvwHnWrXSgYhuk2mEt4LrDGXo.woff2") format("woff2");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "BT Glyphius";
+      src: url("https://framerusercontent.com/assets/xirQ3g4Sv5q7MG0KvL1PiOOLLBA.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "BT Glyphius";
+      src: url("https://framerusercontent.com/assets/dcnL9H2gaFNAG9F1nc6gCkZt2CQ.woff2") format("woff2");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "F37 Bolton";
+      src: url("https://framerusercontent.com/assets/NjDO01jId5REkpwNN1pD7i8fBLY.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "F37 Bolton";
+      src: url("https://framerusercontent.com/assets/OUUqRFRKQpMerpUcBlnnMAKbp0.woff2") format("woff2");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Custom Difference Cursor -->
+  <div id="cursor" class="custom-cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+  </div>
+
+  <!-- =========================================================================
+       FIXED HUD (TOP, CORNERS & METADATA)
+       ========================================================================= -->
+  
+  <!-- 1. Top-Left: Illustrated Avatar & Menu -->
+  <div class="hud-top-left">
+    <!-- Boxed Avatar Icon -->
+    <a href="#" class="avatar-box" id="avatar-home" aria-label="Huy Phan Home">
+      <div class="avatar-label">HUYML</div>
+      <!-- SVG Illustrated Boy with Cap -->
+      <svg class="avatar-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100" height="100" fill="#ececec"/>
+        <!-- Cap visor -->
+        <path d="M22 46C22 46 32 38 68 38C82 38 90 42 90 42L76 49H22V46Z" fill="#111"/>
+        <!-- Cap dome -->
+        <path d="M28 42C28 26 40 20 54 20C68 20 74 28 74 42H28Z" fill="#111"/>
+        <!-- Face contour -->
+        <path d="M34 46V64C34 74 42 82 52 82C62 82 70 74 70 64V46H34Z" fill="#fff" stroke="#111" stroke-width="2.5"/>
+        <!-- Glasses -->
+        <rect x="36" y="52" width="13" height="11" rx="2" stroke="#111" stroke-width="2.5" fill="none"/>
+        <rect x="54" y="52" width="13" height="11" rx="2" stroke="#111" stroke-width="2.5" fill="none"/>
+        <path d="M49 57H54" stroke="#111" stroke-width="2.5"/>
+        <!-- Eyes & smile -->
+        <circle cx="42.5" cy="57.5" r="1.5" fill="#111"/>
+        <circle cx="60.5" cy="57.5" r="1.5" fill="#111"/>
+        <path d="M46 70C48 72 54 72 56 70" stroke="#111" stroke-width="2" stroke-linecap="round"/>
+        <!-- Ears -->
+        <path d="M34 56C30 56 30 63 34 65" stroke="#111" stroke-width="2" fill="#fff"/>
+        <path d="M70 56C74 56 74 63 70 65" stroke="#111" stroke-width="2" fill="#fff"/>
+        <!-- Neck & shirt -->
+        <path d="M46 82V90H58V82" fill="#fff" stroke="#111" stroke-width="2"/>
+        <path d="M30 90C36 86 64 86 70 90L76 100H24L30 90Z" fill="#111"/>
+      </svg>
+    </a>
+
+    <!-- Menu List -->
+    <div class="menu-block">
+      <span class="menu-label">Menu</span>
+      <nav class="menu-nav">
+        <button class="nav-item active" data-tab="work"><span class="arrow-indicator">&rarr;</span>WORK</button>
+        <button class="nav-item" data-tab="about"><span class="arrow-indicator">&rarr;</span>ABOUT</button>
+        <button class="nav-item" data-tab="playground"><span class="arrow-indicator">&rarr;</span>PLAYGROUND</button>
+        <button class="nav-item" data-tab="contact"><span class="arrow-indicator">&rarr;</span>CONTACT</button>
+      </nav>
+    </div>
+  </div>
+
+  <!-- 2. Top-Center Controls: Audio & Realtime Location -->
+  <div class="hud-top-center">
+    <div class="audio-control-wrap">
+      <span class="audio-title">Audio:</span>
+      <button id="audio-toggle-btn" class="audio-toggle-btn" aria-label="Toggle Audio">
+        <span class="state-label" id="audio-state-text">Off &mdash;</span>
+      </button>
+    </div>
+
+    <div class="location-clock-wrap">
+      <span class="loc-text">Working globally</span>
+      <span class="loc-time" id="live-hcmc-time">HCMC, 15:26</span>
+    </div>
+  </div>
+
+  <!-- 3. Top-Right: Inquiries Email -->
+  <div class="hud-top-right">
+    <span class="inquiries-label">For inquiries:</span>
+    <button id="copy-email-trigger" class="inquiries-email-btn" title="Click to copy email">
+      <span class="email-text">hello@huyml.co</span>
+      <span class="copied-tooltip" id="copied-tooltip">Copied!</span>
+    </button>
+  </div>
+
+  <!-- 4. Left Column: Dynamic Project Metadata (Synced with Active Slide) -->
+  <aside class="hud-left-meta">
+    <div class="meta-section">
+      <div class="meta-row">
+        <span class="meta-label">Team</span>
+        <span class="meta-val" id="meta-team">Uncommon</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Role</span>
+        <div class="meta-val-lines" id="meta-role">
+          <span>Design Direction</span>
+          <span>Website Design</span>
+          <span>Showcase</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="meta-section">
+      <div class="meta-row">
+        <span class="meta-label">Launch</span>
+        <span class="meta-val" id="meta-launch">January 2025</span>
+      </div>
+    </div>
+
+    <div class="meta-section recognition-section">
+      <div class="meta-row">
+        <span class="meta-label">Recognition</span>
+        <div class="meta-val-lines recognition-list" id="meta-recognition">
+          <span>Awwwards Site of the Day</span>
+          <span>Awwwards Typography Honors</span>
+          <span>FWA of the Day</span>
+          <span>CSSDA Website of the Day</span>
+          <span>GSAP Site of the Year Nominee</span>
+          <span>Good Design Award Green Tick</span>
+          <span>AGDA Awards Merit</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 5. Bottom-Left: Selected Work Counter & Scroll Prompt -->
+  <div class="hud-bottom-left">
+    <div class="counter-block">
+      <span class="counter-caption">Selected work</span>
+      <div class="counter-numbers">
+        <span class="num-active" id="hud-active-num">07</span>
+        <span class="num-total">/10</span>
+      </div>
+    </div>
+    <div class="scroll-cue">
+      <span class="scroll-text">Scroll</span>
+    </div>
+  </div>
+
+  <!-- 6. Bottom-Right: '25 Showreel Button -->
+  <div class="hud-bottom-right">
+    <button id="showreel-trigger" class="showreel-btn" aria-label="Open 25 Showreel">
+      <span>‘25 showreel</span>
+      <span class="play-arrow">&#9658;</span>
+    </button>
+  </div>
+
+
+  <!-- =========================================================================
+       CENTER & RIGHT: THE HUYML 3D CASCADE & INTERACTIVE SELECTOR
+       ========================================================================= -->
+  <div id="experience-container" class="experience-container">
+    
+    <!-- Center 3D Stage (Fanned Image Cards) -->
+    <div class="stage-3d-wrap">
+      <div id="deck-3d" class="deck-3d">
+        <!-- Cards injected dynamically by main.js for optimal 3D matrix math -->
+      </div>
+    </div>
+
+    <!-- Right Column: Vertical Project Title List -->
+    <div class="titles-column-wrap">
+      <div id="titles-track" class="titles-track">
+        <!-- Project list injected dynamically by main.js -->
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- =========================================================================
+       SLIDE-UP FULLSCREEN OVERLAYS (ABOUT, PLAYGROUND, CONTACT)
+       ========================================================================= -->
+
+  <!-- About Overlay -->
+  <div id="overlay-about" class="hud-drawer-panel" aria-hidden="true">
+    <div class="drawer-header">
+      <span class="drawer-badge">ABOUT / PHILOSOPHY</span>
+      <button class="drawer-close-btn" data-close="about">&times; Close</button>
+    </div>
+    <div class="drawer-scrollable">
+      <div class="about-hero">
+        <span class="big-year">1996</span>
+        <h2 class="about-manifesto">
+          SHAPING DIGITAL EXPERIENCES WITH CLARITY, INTENTION, CHARACTER AND BEING A GOOD FRIEND WITH DIGITAL AGENCIES, DESIGN STUDIOS, STARTUPS AND BUSINESSES AROUND THE WORLD SINCE 2018.
+        </h2>
+        <div class="personal-chips">
+          <span class="chip">Plant Daddy</span>
+          <span class="chip">Gooner since the Invincibles</span>
+          <span class="chip">Married to a beautiful knitter</span>
+          <span class="chip">3 cats call him dad</span>
+          <span class="chip">BlackBerry Collector</span>
+          <span class="chip">Pool Player but Chicken level</span>
+          <span class="chip">into watches now...</span>
+        </div>
+      </div>
+
+      <div class="about-two-col">
+        <div class="col">
+          <h3 class="col-heading">Awards &amp; Recognitions</h3>
+          <ul class="awards-clean-list">
+            <li><span>Awwwards Independent of the Year Nominee</span> <strong>(4)</strong></li>
+            <li><span>CSSDA Designer of the Year Nominee</span> <strong>(3)</strong></li>
+            <li><span>Webby Nominee</span> <strong>(2)</strong></li>
+            <li><span>Webby Honoree</span> <strong>(2)</strong></li>
+            <li><span>Awwwards Site of the Month Nominees</span> <strong>(4)</strong></li>
+            <li><span>Awwwards Site of the Day</span> <strong>(13)</strong></li>
+            <li><span>CSSDA Website of the Month</span> <strong>(2)</strong></li>
+            <li><span>CSSDA Website of the Day</span> <strong>(14)</strong></li>
+            <li><span>FWA of the Day</span> <strong>(12)</strong></li>
+            <li><span>Behance Feature</span> <strong>(17)</strong></li>
+            <li><span>Good Design Awards</span> <strong>(1)</strong></li>
+            <li><span>Best Awards</span> <strong>(2)</strong></li>
+          </ul>
+
+          <h3 class="col-heading" style="margin-top: 3rem;">Talks &amp; Features</h3>
+          <ul class="awards-clean-list">
+            <li>Codrops — Designer Spotlight</li>
+            <li>Sandu Publishing: Interactive Design for Screen</li>
+            <li>Commarts: Won J. You Studios</li>
+            <li>Commarts: Mat Voyce</li>
+            <li>Awwwards Case Study | Serious Business</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h3 class="col-heading">Approach (The 7 Stages)</h3>
+          <div class="stages-clean-list">
+            <div class="stage-item"><strong>P1. Discovery</strong><p>Align on the brief, scope, budget and timeline.</p></div>
+            <div class="stage-item"><strong>P2. One page first</strong><p>Usually the homepage to establish the direction.</p></div>
+            <div class="stage-item"><strong>P3. Build the rest</strong><p>Complete remaining pages with feedback and iterations.</p></div>
+            <div class="stage-item"><strong>P4. Mobile matters</strong><p>Adapt and refine the experience for mobile screens.</p></div>
+            <div class="stage-item"><strong>P5. Final review</strong><p>Polish everything before development.</p></div>
+            <div class="stage-item"><strong>P6. Pixels to production</strong><p>Ensure the live site performs identically to design.</p></div>
+            <div class="stage-item"><strong>P7. Launch 🏆</strong><p>Deploy to the web and pray for some awards.</p></div>
+          </div>
+
+          <div class="credits-clean-box" style="margin-top: 3.5rem;">
+            <h4 class="col-heading">Credits</h4>
+            <p><strong>Development &amp; Rive:</strong> Chien Pham</p>
+            <p><strong>Illustration:</strong> Yup Nguyen</p>
+            <p><strong>Fonts:</strong> BT Glyphius &bull; BT Grotesk &bull; F37 Bolton</p>
+            <p><strong>Copywriting:</strong> Ha Nguyen (the wife)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Playground Overlay -->
+  <div id="overlay-playground" class="hud-drawer-panel" aria-hidden="true">
+    <div class="drawer-header">
+      <span class="drawer-badge">PLAYGROUND / VISUAL EXPERIMENTS</span>
+      <button class="drawer-close-btn" data-close="playground">&times; Close</button>
+    </div>
+    <div class="drawer-scrollable">
+      <p class="playground-intro-text">
+        A space where I can explore different visual directions, interactions, and styles without overthinking too much. Some of these ideas eventually evolve into real projects, while others simply stay here as part of the process.
+      </p>
+      <div class="playground-mosaic">
+        <div class="mosaic-item" style="background-image: url('https://framerusercontent.com/images/ZMZlhfAKVDPaWVzDIpnuU6HVRO4.jpg?width=1138&height=915')"><span>Portfolio Experiment '24</span></div>
+        <div class="mosaic-item" style="background-image: url('https://framerusercontent.com/images/JXol5lZzzYBnMZSEp2JZHIhuuI.jpg?width=1138&height=915')"><span>Rise OS 2 Concept</span></div>
+        <div class="mosaic-item" style="background-image: url('https://framerusercontent.com/images/G6KRK08IYPVsspZ3za8etsb60.jpg?width=910&height=732')"><span>Kinetic Type Exploration</span></div>
+        <div class="mosaic-item" style="background-image: url('https://framerusercontent.com/images/AHnUuCwiIe3u0k9N4az6316yTbU.jpg?width=910&height=732')"><span>Soravia Transition</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Overlay -->
+  <div id="overlay-contact" class="hud-drawer-panel" aria-hidden="true">
+    <div class="drawer-header">
+      <span class="drawer-badge">COME SAY HI</span>
+      <button class="drawer-close-btn" data-close="contact">&times; Close</button>
+    </div>
+    <div class="drawer-scrollable contact-scroll-wrap">
+      <div class="contact-hero">
+        <span class="contact-pre">Drop me a line</span>
+        <a href="mailto:hello@huyml.co" class="contact-huge-email">hello@huyml.co</a>
+      </div>
+
+      <div class="contact-links-grid">
+        <div class="contact-col">
+          <span class="contact-col-heading">Hear me yapping about design</span>
+          <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
+        </div>
+        <div class="contact-col">
+          <span class="contact-col-heading">More design stuff</span>
+          <a href="https://behance.net" target="_blank" rel="noopener">Behance</a>
+          <a href="https://dribbble.com" target="_blank" rel="noopener">Dribbble</a>
+        </div>
+        <div class="contact-col">
+          <span class="contact-col-heading">Design &amp; life updates</span>
+          <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+        </div>
+        <div class="contact-col">
+          <span class="contact-col-heading">Visual archives</span>
+          <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>
+          <a href="https://pexels.com" target="_blank" rel="noopener">Pexels</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Showreel Modal -->
+  <div id="showreel-modal" class="showreel-modal" aria-hidden="true">
+    <div class="showreel-dimmer"></div>
+    <div class="showreel-card">
+      <button id="close-reel-btn" class="showreel-close-btn">&times;</button>
+      <div class="showreel-media-box">
+        <span class="reel-caption">‘25 SHOWREEL &bull; SELECTED WORKS</span>
+        <div class="reel-play-circle">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <span class="reel-sub">PLAY KINETIC SHOWCASE</span>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
